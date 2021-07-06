@@ -1,0 +1,16 @@
+html{
+    font-family: 'Rubik';
+}
+
+h1 {
+    color:#219EBC;
+}
+
+.title {
+    text-align: center;
+}
+
+.pageContent{
+    text-align: center;
+    margin-left: 20%;
+}
