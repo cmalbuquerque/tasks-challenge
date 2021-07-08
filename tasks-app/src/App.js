@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./components/sidebar-component/Sidebar";
-import Title from "./Title";
+import Title from "./utils/Title";
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Tasks from "./pages/Tasks";

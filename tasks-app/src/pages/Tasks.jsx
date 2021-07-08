@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
+import { React, useEffect, useState } from "react";
 import TasksList from "../components/tasks-component/TasksList";
 import axios from "axios";
 
 
 function Tasks(){
 
-    const [data, setData] = React.useState([]);
+    const [data, setData] = useState([]);
 
-    React.useEffect(async () => {
-        const result = await axios("http://localhost:3008/api/tasks/");
-        setData(result.data);
+    useEffect( () => {
+        const fetchData = async () => {
+            const result = await axios("http://localhost:3008/api/tasks/");
+            setData(result.data);
+        };
+        fetchData();
     }, []);
-
     const completedTasks = data.filter(item => item.completed === false);
     const uncompletedTasks = data.filter(item => item.completed === true);
 
@@ -19,7 +21,6 @@ function Tasks(){
     <div className="boardTasks">
     <TasksList type="To Do" data={completedTasks}/>
     <TasksList type="Completed" data={uncompletedTasks}/></div>
-    
     </div>)
 }
 
