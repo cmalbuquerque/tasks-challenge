@@ -1,9 +1,11 @@
 .sidebar{
-    background-color: #023047;
+    background-color: white;
     height: 100vh;
     width: 20%;
-    padding-top: 20px;
+    padding-top: 40px;
     position: fixed;
+    font-weight: 300;
+
 }
 
 
@@ -23,7 +25,7 @@ span{
 
 .item-text a {
     text-decoration: none;
-    color: white;
+    color: #023047;
     font-size: 18px;
     width: 95%;
     height: 100%;
@@ -35,4 +37,5 @@ span{
 
 .item-text a:hover{
     background-color: #219EBC;
+    color: white;
 }

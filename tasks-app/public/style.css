@@ -1,16 +1,28 @@
 html{
-    font-family: 'Rubik';
+    font-family: 'Lato';
+    font-weight: 300;
+    
 }
 
 h1 {
     color:#219EBC;
+    font-weight: 300;
 }
 
 .title {
     text-align: center;
+    background-color: white;
 }
 
 .pageContent{
     text-align: center;
     margin-left: 20%;
+    background-color: #f3f3f3;
+    min-height: 100vh;
+}
+
+.titleSection{
+    font-weight: 300;
+    text-align: left;
+    padding: 56px 40px;
 }
