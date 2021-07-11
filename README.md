@@ -1,6 +1,6 @@
 # Frontend Challenge
 
-React web application developed in a code challenge for Nokia.
+React web application developed as a code challenge for Nokia.
 
 ## API
 
